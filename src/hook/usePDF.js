@@ -7,8 +7,8 @@ export const usePDF = (props) => {
         orientation: "p",
         format: [297, 210]
     }
-    const margin = props?.margin ?? 0
     const ref = useRef()
+    // const scale = 0.252 - (((margin / 1000) * 2.45))
     const generatePDF = () => {
         const doc = new jsPDF(page);
         doc.html(ref.current, {
@@ -18,7 +18,7 @@ export const usePDF = (props) => {
             callback: function (doc) {
                 doc.save(fileName);
             },
-            margin,
+
         });
     }
 

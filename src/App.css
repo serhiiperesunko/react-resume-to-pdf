@@ -1,27 +1,60 @@
 .template {
     font-family: sans-serif;
     font-size: 24px;
+    padding: 20px;
 }
 
 .a4 {
     width: 210mm;
 }
 
-.one, .two, .three {
-    padding: 20px;
+
+.one p {
+    font-size: 16px;
+    color: black;
+    line-height: 24px;
+    font-weight: 400;
+
+    margin-bottom: 15px;
 }
 
-.one {
-    background: green;
-    font-size: 12px;
+.one h1 {
+    padding: 0;
+    margin: 0;
 }
 
-.two {
-    background: orange;
+.one h3 {
+
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    border-top: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+}
+
+
+.two p {
+    font-size: 14px;
+    color: gray;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.two h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.two h3 {
     font-size: 18px;
-}
-
-.three {
-    background: blue;
-    font-size: 36px;
+    line-height: 33px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    border-bottom: 1px solid orange;
 }
