@@ -1,3 +1,7 @@
+html {
+    background: #f5f5f5;
+}
+
 .template {
     font-family: sans-serif;
     font-size: 24px;
@@ -8,6 +12,13 @@
     width: 210mm;
 }
 
+.page {
+    margin: 20px;
+    height: 297mm;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 .one p {
     font-size: 16px;

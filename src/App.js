@@ -89,16 +89,30 @@ function App() {
         margin: 10
     })
     return (
-        <>
-            <ConvertToPDF className='pdf-body'>
-                <ResumeTemplate type={type}/>
-            </ConvertToPDF>
-            <div>
+        <div style={{
+            display: "flex",
+            alignItems: 'center'
+        }}>
+            <div className="page">
+                <ConvertToPDF className='pdf-body'>
+                    <ResumeTemplate type={type}/>
+                </ConvertToPDF>
+            </div>
+            <div style={{
+                position: "fixed",
+                right: "25%",
+                display: "flex",
+                flexFlow: "column"
+            }}>
                 <button onClick={() => setType(1)}>template 1</button>
                 <button onClick={() => setType(2)}>template 2</button>
+                <div style={{
+                    marginTop: 10
+                }}>
+                    <button onClick={generatePDF}>Generate</button>
+                </div>
             </div>
-            <button onClick={generatePDF}>Generate</button>
-        </>
+        </div>
     );
 }
 
