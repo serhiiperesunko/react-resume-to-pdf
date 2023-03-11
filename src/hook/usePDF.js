@@ -51,6 +51,7 @@ export const usePDF = (props = {}) => {
             putOnlyUsedFonts: true,
             ...config
         });
+        console.log(refPDF.current)
         doc.html(refPDF.current, {
             html2canvas: {
                 scale: 0.75
