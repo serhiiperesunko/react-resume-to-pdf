@@ -1,71 +1,36 @@
-html {
-    background: #f5f5f5;
+.preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.template {
-    font-family: sans-serif;
-    font-size: 24px;
-    padding: 20px;
+.panel {
+    width: 100%;
+    background: silver;
+    text-align: right;
+    padding: 10px;
 }
 
-.a4 {
-    width: 210mm;
-}
-
-.page {
-    margin: 20px;
+textarea {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    resize: none;
     height: 297mm;
-    display: inline-block;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.one p {
-    font-size: 16px;
-    color: black;
-    line-height: 24px;
-    font-weight: 400;
-
-    margin-bottom: 15px;
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.one h1 {
-    padding: 0;
-    margin: 0;
+.content > section {
+    width: 50%;
 }
 
-.one h3 {
-
-    font-size: 22px;
-    line-height: 33px;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-    border-top: 1px solid lightblue;
-    border-bottom: 1px solid lightblue;
-}
-
-
-.two p {
-    font-size: 14px;
-    color: gray;
-    line-height: 24px;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-.two h1 {
-    padding: 0;
-    margin: 0;
-}
-
-.two h3 {
-    font-size: 18px;
-    line-height: 33px;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-    border-bottom: 1px solid orange;
+.content > .convert {
+    border: 1px dashed #000;
+    width: 210mm;
 }
