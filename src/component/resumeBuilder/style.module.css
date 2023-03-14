@@ -9,6 +9,12 @@
     padding: 10px;
 }
 
+.rbResumeView {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .divider {
     width: 1px;
     height: 100%;
@@ -30,4 +36,21 @@
 
 .active {
     box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.zoom100 {
+    transform: scale(1, 1);
+}
+
+.zoom75 {
+    transform: scale(0.75, 0.75);
+
+}
+
+.zoom50 {
+    transform: scale(0.5, 0.5);
+}
+
+.controls {
+    width: 200px;
 }
