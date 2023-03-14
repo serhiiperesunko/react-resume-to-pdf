@@ -1,0 +1,33 @@
+.rbContainer {
+    display: flex;
+    height: 100vh;
+}
+
+.rbSection {
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.divider {
+    width: 1px;
+    height: 100%;
+    background: silver;
+}
+
+.rbTemplateContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0.001;
+}
+
+.rbTemplate {
+    height: 180px;
+    width: 130px;
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+.active {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+}
